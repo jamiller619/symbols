@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+
+    "target": "esnext",
+    "module": "nodenext",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true,
+
+    "lib": ["ESNext"],
+    "skipLibCheck": true,
+
+    "jsx": "preserve",
+    "newLine": "lf",
+    "noErrorTruncation": true,
+
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitOverride": true
+  },
+  "exclude": ["node_modules", "dist"]
+}
