@@ -35,7 +35,7 @@ async function loadIconNames() {
     .sort((a, b) => a.localeCompare(b))
 }
 
-function renderHtml(iconNames: string[]) {
+function renderHtml(iconNames) {
   const safeJson = JSON.stringify(iconNames).replace(/</g, '\\u003c')
   const relativeIconDir = path
     .relative(path.dirname(outputPath), iconDir)
