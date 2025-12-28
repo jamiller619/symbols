@@ -1,6 +1,6 @@
 {
   "name": "symbols",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
@@ -10,7 +10,10 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./*": "./dist/components/*.tsx",
+    "./*": {
+      "types": "./dist/components/*.d.ts",
+      "import": "./dist/components/*.js"
+    },
     "./package.json": "./package.json"
   },
   "scripts": {
